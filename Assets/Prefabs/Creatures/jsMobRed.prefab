@@ -43,9 +43,10 @@ GameObject:
   - 23: {fileID: 2367304}
   - 114: {fileID: 11407198}
   - 114: {fileID: 11443466}
+  - 114: {fileID: 11452130}
   m_Layer: 0
   m_Name: jsMobRed
-  m_TagString: Untagged
+  m_TagString: Damager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69,7 +70,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 194562}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.04, y: 5.7, z: 0}
+  m_LocalPosition: {x: 90.1, y: 13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 481704}
@@ -190,6 +191,18 @@ MonoBehaviour:
   m_GroundLayer:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &11452130
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 194562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f57e4b1e343ef1479e354e3d738b725, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DamagePerSecond: 1
 --- !u!212 &21234180
 SpriteRenderer:
   m_ObjectHideFlags: 1

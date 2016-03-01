@@ -3,7 +3,8 @@ using System.Collections;
 
 public class Creature : MonoBehaviour
 {
-
+	public float Durability = 1f;
+	public float MaxDurability = 1f;
 	public Vector3 spawnPosition;
 
 
@@ -12,6 +13,31 @@ public class Creature : MonoBehaviour
 	{
 
 		spawnPosition = transform.position;
+
+	}
+
+
+	public void Hit(float hitRate)
+	{
+
+		Durability -= hitRate;
+
+		if (Durability <= 0)
+		{
+			Respawn();
+		}
+
+	}
+
+	public void Respawn()
+	{
+
+		this.Durability = MaxDurability;
+		//this.transform.position = spawnPosition;
+
+		//this.transform.position.Set(spawnPosition.x, spawnPosition.y,spawnPosition.z); ;
+		this.transform.position.Set(70f, 25f, 0);
+		Debug.Log("respawned " + Time.time);
 
 	}
 
@@ -27,9 +53,17 @@ public class Creature : MonoBehaviour
 
 	}
 
-	void OnJellyTriggerEnter2D(JellySprite.JellyCollider2D trigger) { 
-		Debug.Log(trigger.Collider2D.tag);
-
+	void OnJellyTriggerEnter2D(JellySprite.JellyCollider2D trigger)
+	{
+		if (trigger.Collider2D.tag == "Damager")
+		{
+			var go = trigger.Collider2D.gameObject;
+			var damager = go.GetComponent<Damager>();
+			if (damager)
+			{
+				Hit(damager.DamagePerSecond);
+			}
+		}
 	}
 
 }

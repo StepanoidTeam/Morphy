@@ -1558,11 +1558,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 467582, guid: e0cd957c1067af04c923c4fe147ad1b0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -17.38
+      value: -22.83
       objectReference: {fileID: 0}
     - target: {fileID: 467582, guid: e0cd957c1067af04c923c4fe147ad1b0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 22.83
+      value: 22.09
       objectReference: {fileID: 0}
     - target: {fileID: 467582, guid: e0cd957c1067af04c923c4fe147ad1b0, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1591,6 +1591,10 @@ Prefab:
     - target: {fileID: 138030, guid: e0cd957c1067af04c923c4fe147ad1b0, type: 2}
       propertyPath: m_Name
       value: Saw (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 138030, guid: e0cd957c1067af04c923c4fe147ad1b0, type: 2}
+      propertyPath: m_TagString
+      value: Damager
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e0cd957c1067af04c923c4fe147ad1b0, type: 2}
@@ -1654,11 +1658,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 467582, guid: e0cd957c1067af04c923c4fe147ad1b0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -8.06
+      value: -9.06
       objectReference: {fileID: 0}
     - target: {fileID: 467582, guid: e0cd957c1067af04c923c4fe147ad1b0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.37
+      value: 1.03
       objectReference: {fileID: 0}
     - target: {fileID: 467582, guid: e0cd957c1067af04c923c4fe147ad1b0, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1687,6 +1691,10 @@ Prefab:
     - target: {fileID: 138030, guid: e0cd957c1067af04c923c4fe147ad1b0, type: 2}
       propertyPath: m_Name
       value: Saw (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 138030, guid: e0cd957c1067af04c923c4fe147ad1b0, type: 2}
+      propertyPath: m_TagString
+      value: Damager
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e0cd957c1067af04c923c4fe147ad1b0, type: 2}
@@ -2307,7 +2315,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 467582, guid: e0cd957c1067af04c923c4fe147ad1b0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 75.34
+      value: 69.6
       objectReference: {fileID: 0}
     - target: {fileID: 467582, guid: e0cd957c1067af04c923c4fe147ad1b0, type: 2}
       propertyPath: m_LocalPosition.y
@@ -2340,6 +2348,10 @@ Prefab:
     - target: {fileID: 138030, guid: e0cd957c1067af04c923c4fe147ad1b0, type: 2}
       propertyPath: m_Name
       value: Saw (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 138030, guid: e0cd957c1067af04c923c4fe147ad1b0, type: 2}
+      propertyPath: m_TagString
+      value: Damager
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e0cd957c1067af04c923c4fe147ad1b0, type: 2}
@@ -2726,7 +2738,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 467582, guid: e0cd957c1067af04c923c4fe147ad1b0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 12.52
+      value: 8.15
       objectReference: {fileID: 0}
     - target: {fileID: 467582, guid: e0cd957c1067af04c923c4fe147ad1b0, type: 2}
       propertyPath: m_LocalPosition.y

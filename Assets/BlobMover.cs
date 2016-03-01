@@ -4,13 +4,15 @@ using System.Collections;
 public class BlobMover : MonoBehaviour
 {
 
-	public float m_JumpForce = 10.0f;
-	public float m_Speed = 10.0f;
+	public float JumpForce = 10.0f;
+	public float Speed = 10.0f;
+
+	public int groundedBodies = 1;
+	public float onAirSpeedPenalty = 4f;
 
 	public LayerMask m_GroundLayer;
 
 	JellySprite m_JellySprite;
-
 
 
 	/// <summary>
@@ -35,6 +37,8 @@ public class BlobMover : MonoBehaviour
 
 	bool CheckIsGrounded()
 	{
+		return m_JellySprite.IsGrounded(m_GroundLayer, groundedBodies);
+
 
 		RaycastHit2D hit = Physics2D.Raycast(transform.position + Vector3.down * m_GroundRayOffset, Vector2.down, m_GroundRayLength);
 		if (hit.collider != null)
@@ -50,21 +54,25 @@ public class BlobMover : MonoBehaviour
 		return false;
 	}
 
-	
+
 	// Update is called once per frame
 	void FixedUpdate()
 	{
-		var Axes = new Vector3(Input.GetAxis("Horizontal"), 0/*, Input.GetAxis("Vertical")*/);
+		var isGrounded = CheckIsGrounded();
 
-		if (Input.GetButton("Jump") /*&& CheckIsGrounded() */&& m_JellySprite.IsGrounded(m_GroundLayer, 1))
+		var axes = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+
+		if (Input.GetButton("Jump") && isGrounded)
 		{
-			m_JellySprite.AddForce(m_JumpForce * Vector2.up);
-			//body.AddForce(m_JumpForce * Vector2.up);
-			//Debug.Log("jumped Jellly");
+			m_JellySprite.AddForce(JumpForce * Vector2.up);
 		}
 
-		m_JellySprite.AddForce(Axes * m_Speed);
-		//body.AddForce(Axes * m_Speed);
+		m_JellySprite.AddForce(Vector2.right * axes.x * Speed * (isGrounded ? 1 : 1 / onAirSpeedPenalty));
+
+		if (!isGrounded && axes.z < 0)
+		{
+			m_JellySprite.AddForce(Vector2.up * axes.z * Speed);
+		}
 	}
 
 
