@@ -9,7 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 498200}
   m_Layer: 9
-  m_Name: 4x3dBlock
+  m_Name: Level_Block3Dx4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
