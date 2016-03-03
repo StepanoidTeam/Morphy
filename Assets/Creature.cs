@@ -36,7 +36,11 @@ public class Creature : MonoBehaviour
 		//this.transform.position = spawnPosition;
 
 		//this.transform.position.Set(spawnPosition.x, spawnPosition.y,spawnPosition.z); ;
-		this.transform.position.Set(70f, 25f, 0);
+		//this.transform.position.Set(70f, 25f, 0);
+
+		var jelly = this.GetComponent<JellySprite>();
+		jelly.SetPosition(spawnPosition, true);
+
 		Debug.Log("respawned " + Time.time);
 
 	}
@@ -53,6 +57,7 @@ public class Creature : MonoBehaviour
 
 	}
 
+	
 	void OnJellyTriggerEnter2D(JellySprite.JellyCollider2D trigger)
 	{
 		if (trigger.Collider2D.tag == "Damager")
