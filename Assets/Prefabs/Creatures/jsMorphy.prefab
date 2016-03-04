@@ -62,7 +62,7 @@ GameObject:
   - 114: {fileID: 11443778}
   m_Layer: 0
   m_Name: jsMorphy
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -162,7 +162,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 195caebf3015d43458e086649b7c4beb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Durability: 1
+  MaxDurability: 1
   spawnPosition: {x: 16, y: 14, z: 0}
+  Hazards: []
 --- !u!114 &11465212
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -298,7 +301,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 153758}
