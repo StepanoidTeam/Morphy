@@ -21,6 +21,10 @@ public class Destroyable : MonoBehaviour
 
 	}
 
+	bool IsHazardous(string tag)
+	{
+		return Array.IndexOf(Hazards, tag) >= 0;
+	}
 
 	public void Hit(float hitRate)
 	{
@@ -30,18 +34,26 @@ public class Destroyable : MonoBehaviour
 		if (Durability <= 0)
 		{
 			StartCoroutine(Respawn());
-			
+
 		}
 
 	}
 
 	public IEnumerator Respawn()
 	{
-		gameObject.GetComponent<Renderer>().enabled = false;
+		var renderer = gameObject.GetComponent<Renderer>();
+		if (renderer)
+		{
+
+			renderer.enabled = false;
+		}
+		else {
+			this.gameObject.SetActive(false);
+		}
 
 		yield return new WaitForSeconds(RespawnTimeout);
 
-		
+
 
 		this.Durability = MaxDurability;
 		//this.transform.position = spawnPosition;
@@ -50,9 +62,17 @@ public class Destroyable : MonoBehaviour
 		//this.transform.position.Set(70f, 25f, 0);
 
 		var jelly = this.GetComponent<JellySprite>();
-		jelly.SetPosition(spawnPosition, true);
+		if (jelly)
+		{
+			jelly.SetPosition(spawnPosition, true);
+		}
+		else
+		{
 
-		gameObject.GetComponent<Renderer>().enabled = true;
+			this.gameObject.transform.position = spawnPosition;
+		}
+
+		if (renderer) renderer.enabled = true;
 
 		Debug.Log("respawned " + Time.time);
 	}
@@ -68,16 +88,18 @@ public class Destroyable : MonoBehaviour
 	{
 
 	}
+	
+	void OnTriggerEnter2D(Collider2D trigger)
+	{
 
-
-	void OnTriggerEnter2D(Collider2D trigger) {
-		if (Array.IndexOf(Hazards, trigger.tag) >= 0)
+		if (IsHazardous(trigger.tag))
 		{
 			var go = trigger.gameObject;
 			var damager = go.GetComponent<Damager>();
 			if (damager)
 			{
 				Hit(damager.DamagePerSecond);
+				//coll.gameObject.SendMessage("ApplyDamage", 10);
 			}
 		}
 	}
@@ -86,7 +108,7 @@ public class Destroyable : MonoBehaviour
 	void OnJellyTriggerEnter2D(JellySprite.JellyCollider2D trigger)
 	{
 
-		if (Array.IndexOf(Hazards, trigger.Collider2D.tag) >= 0)
+		if (IsHazardous(trigger.Collider2D.tag))
 		{
 			var go = trigger.Collider2D.gameObject;
 			var damager = go.GetComponent<Damager>();
