@@ -40,6 +40,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 497886}
+  - 95: {fileID: 9553726}
   m_Layer: 0
   m_Name: Eyes
   m_TagString: Untagged
@@ -60,6 +61,9 @@ GameObject:
   - 114: {fileID: 11465212}
   - 114: {fileID: 11490182}
   - 114: {fileID: 11443778}
+  - 58: {fileID: 5862262}
+  - 114: {fileID: 11457760}
+  - 114: {fileID: 11488528}
   m_Layer: 0
   m_Name: jsMorphy
   m_TagString: Player
@@ -74,7 +78,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 153758}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 70.9, y: 37.3, z: 0}
+  m_LocalPosition: {x: 72.1, y: 24.66, z: 0}
   m_LocalScale: {x: 1.3146942, y: 1.3146938, z: 1.3146938}
   m_Children:
   - {fileID: 497886}
@@ -99,7 +103,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 129670}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.58, y: 0.4499998, z: 0}
+  m_LocalPosition: {x: -0.39, y: 0.4499998, z: 0}
   m_LocalScale: {x: 0.5997302, y: 0.599731, z: 0.599731}
   m_Children: []
   m_Father: {fileID: 497886}
@@ -111,7 +115,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 148748}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.05, y: -0.23, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 489208}
@@ -151,6 +155,37 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 153758}
   m_Mesh: {fileID: 0}
+--- !u!58 &5862262
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 153758}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.7175
+--- !u!95 &9553726
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 148748}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7fe267563a5db914b83311cd35292af7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11443778
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -164,8 +199,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Durability: 1
   MaxDurability: 1
-  spawnPosition: {x: 16, y: 14, z: 0}
-  Hazards: []
+  spawnPosition: {x: 0, y: 0, z: 0}
+  RespawnTimeout: 1
+  Hazards:
+  - Enemy
+  - Trap
+--- !u!114 &11457760
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 153758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f57e4b1e343ef1479e354e3d738b725, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DamagePerSecond: 1
+  Tags:
+  - Player
+  - Default
 --- !u!114 &11465212
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -180,9 +233,29 @@ MonoBehaviour:
   m_Style: 0
   m_FreeModeBodyPositions:
   - {x: 0, y: 0, z: 0}
+  - {x: 0.85875, y: 0, z: 0}
+  - {x: 0.69474334, y: 0.50476056, z: 0}
+  - {x: 0.2653683, y: 0.8167198, z: 0}
+  - {x: -0.26536834, y: 0.81671965, z: 0}
+  - {x: -0.6947434, y: 0.5047605, z: 0}
+  - {x: -0.85875, y: -0.00000007507431, z: 0}
+  - {x: -0.6947433, y: -0.5047607, z: 0}
+  - {x: -0.26536843, y: -0.8167197, z: 0}
+  - {x: 0.26536846, y: -0.8167197, z: 0}
+  - {x: 0.69474363, y: -0.5047604, z: 0}
   m_FreeModeBodyRadii:
-  - 1
-  m_FreeModeBodyKinematic: 00
+  - 1.1289936
+  - 1.1289936
+  - 1.1289936
+  - 1.1289936
+  - 1.1289936
+  - 1.1289936
+  - 1.1289936
+  - 1.1289936
+  - 1.1289936
+  - 1.1289936
+  - 1.1289936
+  m_FreeModeBodyKinematic: 0000000000000000000000
   m_MassStyle: 0
   m_PhysicsMaterial: {fileID: 0}
   m_PhysicsMaterial2D: {fileID: 6200000, guid: e7b65b018d0adf54bb899f1689e63970, type: 2}
@@ -203,7 +276,7 @@ MonoBehaviour:
   m_DampingRatio: 0
   m_SoftBodyScale: {x: 1, y: 1}
   m_SoftBodyRotation: 0
-  m_SoftBodyOffset: {x: -0, y: 0}
+  m_SoftBodyOffset: {x: -0, y: -0}
   m_CentralBodyOffset: {x: -0, y: -0}
   m_SpriteScale: {x: 0.5, y: 0.5}
   m_2DMode: 1
@@ -214,7 +287,49 @@ MonoBehaviour:
   m_AttachPoints:
   - {fileID: 497886}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Sprite: {fileID: 21300000, guid: 212bb61019f26964fb0368481c6bab78, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 29cf72554823dbc4fad3a47f75c3650b, type: 3}
+--- !u!114 &11488528
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 153758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db93aa8a5104db4469a79d9fe1f6908d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlobStates:
+  - stateName: Default
+    key: 122
+    texture: {fileID: 2800000, guid: 4de51fdc9dd2dd449b65afef3883f809, type: 3}
+    jellyStiffness: 4
+    jellyMass: 5
+  - stateName: Hack
+    key: 120
+    texture: {fileID: 2800000, guid: f662997bd229fe04d9f0c193e511ad18, type: 3}
+    jellyStiffness: 0.9
+    jellyMass: 5
+  - stateName: Fire
+    key: 99
+    texture: {fileID: 2800000, guid: 4a005575085316f4198e7aa2426eb228, type: 3}
+    jellyStiffness: 4
+    jellyMass: 5
+  - stateName: Fire
+    key: 118
+    texture: {fileID: 2800000, guid: 4737dd2a3e6c33d47886a91c1746cc84, type: 3}
+    jellyStiffness: 4
+    jellyMass: 5
+  - stateName: Liquid
+    key: 98
+    texture: {fileID: 2800000, guid: c570aa16882e48c48a5a27ca5690a346, type: 3}
+    jellyStiffness: 4
+    jellyMass: 5
+  - stateName: Hack
+    key: 110
+    texture: {fileID: 2800000, guid: 8057d0524a7b46947be30f5939b5c288, type: 3}
+    jellyStiffness: 4
+    jellyMass: 5
 --- !u!114 &11490182
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -233,8 +348,6 @@ MonoBehaviour:
   m_GroundLayer:
     serializedVersion: 2
     m_Bits: 512
-  m_GroundRayOffset: 2.16
-  m_GroundRayLength: 0.01
 --- !u!212 &21226686
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -1,18 +1,16 @@
 ﻿using UnityEngine;
-using System.Collections;
+using System.Linq;
 
-public class Damager : MonoBehaviour {
+public class Damager : MonoBehaviour
+{
 
 	public float DamagePerSecond = 1f;
 
+	public string[] Tags;
 
-	// Use this for initialization
-	void Start () {
-	
+	public bool HasTag(string tag)
+	{
+		return Tags.Contains(tag);
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
 }
