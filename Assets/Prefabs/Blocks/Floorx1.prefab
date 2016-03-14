@@ -11,7 +11,7 @@ GameObject:
   - 33: {fileID: 3332796}
   - 23: {fileID: 2397924}
   - 95: {fileID: 9524102}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: block_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 476736}
   - 61: {fileID: 6135290}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: 3.Floor_Straight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 477714}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Floorx1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

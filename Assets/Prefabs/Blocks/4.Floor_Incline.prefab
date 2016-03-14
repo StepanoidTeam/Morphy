@@ -11,7 +11,7 @@ GameObject:
   - 33: {fileID: 3378142}
   - 23: {fileID: 2367578}
   - 95: {fileID: 9527184}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: block_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 490512}
   - 61: {fileID: 6114712}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: 4.Floor_Incline
   m_TagString: Untagged
   m_Icon: {fileID: 0}

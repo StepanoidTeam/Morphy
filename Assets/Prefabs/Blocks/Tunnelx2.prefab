@@ -9,7 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 483330}
   - 61: {fileID: 6166178}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: 3.Floor_Straight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ GameObject:
   - 33: {fileID: 3322920}
   - 23: {fileID: 2338910}
   - 95: {fileID: 9557352}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: block_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,7 @@ GameObject:
   - 33: {fileID: 3357900}
   - 23: {fileID: 2307500}
   - 95: {fileID: 9539280}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: block_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60,7 +60,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 423564}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Tunnelx1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76,7 +76,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 425104}
   - 61: {fileID: 6125862}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: 3.Floor_Straight (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 410620}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Tunnelx1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 485692}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: 1.Wall_Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -121,7 +121,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 403432}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Tunnelx2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -139,7 +139,7 @@ GameObject:
   - 33: {fileID: 3376570}
   - 23: {fileID: 2393424}
   - 95: {fileID: 9570226}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: block_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -154,7 +154,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 487618}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: 1.Wall_Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -172,7 +172,7 @@ GameObject:
   - 33: {fileID: 3370868}
   - 23: {fileID: 2301960}
   - 95: {fileID: 9541638}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: block_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -190,7 +190,7 @@ GameObject:
   - 33: {fileID: 3304190}
   - 23: {fileID: 2387226}
   - 95: {fileID: 9561118}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: block_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -206,7 +206,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400082}
   - 61: {fileID: 6182752}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: 3.Floor_Straight (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -224,7 +224,7 @@ GameObject:
   - 33: {fileID: 3361548}
   - 23: {fileID: 2387640}
   - 95: {fileID: 9547322}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: block_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -240,7 +240,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 480264}
   - 61: {fileID: 6150720}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: 3.Floor_Straight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
