@@ -11,7 +11,9 @@ GameObject:
   - 33: {fileID: 3328228}
   - 23: {fileID: 2346688}
   - 61: {fileID: 6174156}
+  - 61: {fileID: 6140590}
   - 114: {fileID: 11484170}
+  - 50: {fileID: 5029328}
   m_Layer: 9
   m_Name: Ground Block
   m_TagString: Untagged
@@ -26,7 +28,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 175792}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.74, y: 32.01, z: 0}
+  m_LocalPosition: {x: -4.48, y: 39.66, z: 0}
   m_LocalScale: {x: 6, y: 2, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -64,7 +66,24 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 175792}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!61 &6174156
+--- !u!50 &5029328
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 175792}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &6140590
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -74,6 +93,20 @@ BoxCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+--- !u!61 &6174156
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 175792}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
@@ -92,7 +125,7 @@ MonoBehaviour:
   Durability: 1
   MaxDurability: 1
   spawnPosition: {x: 0, y: 0, z: 0}
-  RespawnTimeout: 1
+  RespawnTimeout: 50
   Hazards:
   - Fire
 --- !u!1001 &100100000

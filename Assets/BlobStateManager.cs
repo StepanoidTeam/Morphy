@@ -3,8 +3,9 @@ using System.Collections;
 using System;
 using System.Linq;
 
-public class BlobStateManager : MonoBehaviour {
-	
+public class BlobStateManager : MonoBehaviour
+{
+
 	[Serializable]
 	public class BlobStateBehavior
 	{
@@ -21,11 +22,13 @@ public class BlobStateManager : MonoBehaviour {
 
 	public UnityJellySprite Player;
 
+	Damager playerDamager;
+
 	public UnityEngine.UI.LayoutGroup BlobStateContainer;
 	public GameObject BlobStateIndicatorPrefab;
 
 
-	BlobStateBehavior сurrentState;
+	public BlobStateBehavior сurrentState;
 	public BlobStateBehavior GetCurrentState()
 	{
 		return сurrentState;
@@ -35,28 +38,32 @@ public class BlobStateManager : MonoBehaviour {
 
 	Renderer playerRenderer;
 
-	
+
 
 	void Start()
 	{
 		playerRenderer = Player.GetComponent<Renderer>();
+		playerDamager = Player.GetComponent<Damager>();
 
 		SetBlobState(BlobStates.First());
 
 
 		InitIndicators();
-    }
+	}
 
 
-	void InitIndicators() {
+	void InitIndicators()
+	{
 
 		//clear all old states
-		foreach (var t in BlobStateContainer.transform.OfType<Transform>().ToList()) {
+		foreach (var t in BlobStateContainer.transform.OfType<Transform>().ToList())
+		{
 			Destroy(t.gameObject);
 		}
 
 
-		foreach (var state in BlobStates) {
+		foreach (var state in BlobStates)
+		{
 
 			var go = Instantiate(BlobStateIndicatorPrefab);
 			var bsi = go.GetComponent<BlobStateIndicator>();
@@ -101,9 +108,11 @@ public class BlobStateManager : MonoBehaviour {
 
 		playerRenderer.material.mainTexture = state.texture;
 
-		
+
 		//GetComponent<Damager>().Tags
 		//todo: set tags
+
+		playerDamager.Tags = new string[] { "Player", state.stateName };
 
 
 		//jelly params
