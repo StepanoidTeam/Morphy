@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System;
+using System.Linq;
 
 public class Destroyable : MonoBehaviour
 {
@@ -23,7 +24,7 @@ public class Destroyable : MonoBehaviour
 
 	bool IsHazardous(string tag)
 	{
-		return Array.IndexOf(Hazards, tag) >= 0;
+		return Hazards.Contains(tag);
 	}
 
 	public void Hit(float hitRate)
@@ -47,7 +48,8 @@ public class Destroyable : MonoBehaviour
 
 			renderer.enabled = false;
 		}
-		else {
+		else
+		{
 			this.gameObject.SetActive(false);
 		}
 
@@ -77,46 +79,35 @@ public class Destroyable : MonoBehaviour
 		Debug.Log("respawned " + Time.time);
 	}
 
-	// Update is called once per frame
-	void Update()
-	{
 
-	}
-
-
-	void FixedUpdate()
-	{
-
-	}
-	
 	void OnTriggerEnter2D(Collider2D trigger)
 	{
-
-		if (IsHazardous(trigger.tag))
-		{
-			var go = trigger.gameObject;
-			var damager = go.GetComponent<Damager>();
-			if (damager)
-			{
-				Hit(damager.DamagePerSecond);
-				//coll.gameObject.SendMessage("ApplyDamage", 10);
-			}
-		}
+		GetDamagerAndDoStuff(trigger.gameObject);
 	}
 
 
 	void OnJellyTriggerEnter2D(JellySprite.JellyCollider2D trigger)
 	{
+		GetDamagerAndDoStuff(trigger.Collider2D.gameObject);
+	}
 
-		if (IsHazardous(trigger.Collider2D.tag))
+
+	void GetDamagerAndDoStuff(GameObject go)
+	{
+		var damager = go.GetComponent<Damager>();
+		if (damager)
 		{
-			var go = trigger.Collider2D.gameObject;
-			var damager = go.GetComponent<Damager>();
-			if (damager)
+			foreach (var h in Hazards)
 			{
-				Hit(damager.DamagePerSecond);
+				if (damager.HasTag(h))
+				{
+					Hit(damager.DamagePerSecond);
+					//coll.gameObject.SendMessage("ApplyDamage", 10);
+					break;
+				}
 			}
 		}
+
 	}
 
 }
