@@ -8,7 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 485194}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Bunker_Lockx2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24,7 +24,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 483238}
   - 61: {fileID: 6122002}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 3.Floor_Straight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   - 33: {fileID: 3316600}
   - 23: {fileID: 2323086}
   - 95: {fileID: 9554488}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: block_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60,7 +60,7 @@ GameObject:
   - 33: {fileID: 3369150}
   - 23: {fileID: 2393714}
   - 95: {fileID: 9546528}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: block_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76,7 +76,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 426062}
   - 61: {fileID: 6179710}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 3.Floor_Straight (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

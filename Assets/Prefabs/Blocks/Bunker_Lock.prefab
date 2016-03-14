@@ -8,7 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 460936}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Bunker_Lock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23,7 +23,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 474286}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 5.Obtacle_Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   - 33: {fileID: 3308790}
   - 23: {fileID: 2313110}
   - 95: {fileID: 9500148}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: block_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,7 +56,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 418380}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 4.Obtacle_Arch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 432852}
   - 61: {fileID: 6175422}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 4.Floor_Incline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   - 33: {fileID: 3302562}
   - 23: {fileID: 2347254}
   - 95: {fileID: 9524886}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: block_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   - 33: {fileID: 3383462}
   - 23: {fileID: 2380622}
   - 95: {fileID: 9577088}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: block_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,7 +124,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 473182}
   - 61: {fileID: 6108430}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 4.Floor_Incline (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -139,7 +139,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 478582}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 10.Obtacle_Test
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -157,7 +157,7 @@ GameObject:
   - 33: {fileID: 3344054}
   - 23: {fileID: 2322314}
   - 95: {fileID: 9580072}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: block_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -8,7 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 446176}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 2.Wall_Triangle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ GameObject:
   - 33: {fileID: 3337284}
   - 23: {fileID: 2391606}
   - 95: {fileID: 9531950}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: block_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - 33: {fileID: 3305686}
   - 23: {fileID: 2388514}
   - 95: {fileID: 9504284}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: block_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62,7 +62,7 @@ GameObject:
   - 33: {fileID: 3326764}
   - 23: {fileID: 2306120}
   - 95: {fileID: 9514274}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: block_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78,7 +78,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 436636}
   - 61: {fileID: 6196780}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 4.Floor_Incline (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 416402}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: InclineConnector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 419036}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 2.Wall_Triangle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,7 +124,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 461974}
   - 61: {fileID: 6161732}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 4.Floor_Incline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142,7 +142,7 @@ GameObject:
   - 33: {fileID: 3302140}
   - 23: {fileID: 2379650}
   - 95: {fileID: 9502232}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: block_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
