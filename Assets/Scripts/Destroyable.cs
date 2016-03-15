@@ -7,18 +7,12 @@ public class Destroyable : MonoBehaviour
 {
 	public float Durability = 1f;
 	public float MaxDurability = 1f;
-	public Vector3 spawnPosition;
-
-	public float RespawnTimeout = 1f;
-
 
 	public string[] Hazards;
 
 	// Use this for initialization
 	void Start()
 	{
-
-		spawnPosition = transform.position;
 
 	}
 
@@ -34,50 +28,11 @@ public class Destroyable : MonoBehaviour
 
 		if (Durability <= 0)
 		{
-			StartCoroutine(Respawn());
-
+			Destroy(this.gameObject);
 		}
 
 	}
 
-	public IEnumerator Respawn()
-	{
-		var renderer = gameObject.GetComponent<Renderer>();
-		if (renderer)
-		{
-
-			renderer.enabled = false;
-		}
-		else
-		{
-			this.gameObject.SetActive(false);
-		}
-
-		yield return new WaitForSeconds(RespawnTimeout);
-
-
-
-		this.Durability = MaxDurability;
-		//this.transform.position = spawnPosition;
-
-		//this.transform.position.Set(spawnPosition.x, spawnPosition.y,spawnPosition.z); ;
-		//this.transform.position.Set(70f, 25f, 0);
-
-		var jelly = this.GetComponent<JellySprite>();
-		if (jelly)
-		{
-			jelly.SetPosition(spawnPosition, true);
-		}
-		else
-		{
-
-			this.gameObject.transform.position = spawnPosition;
-		}
-
-		if (renderer) renderer.enabled = true;
-
-		Debug.Log("respawned " + Time.time);
-	}
 
 
 	void OnTriggerEnter2D(Collider2D trigger)
