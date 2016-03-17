@@ -42,13 +42,22 @@ public class BlobStateManager : MonoBehaviour
 
 	void Start()
 	{
-		playerRenderer = Player.GetComponent<Renderer>();
-		playerDamager = Player.GetComponent<Damager>();
-
-		SetBlobState(BlobStates.First());
+		Setup();
+	}
 
 
-		InitIndicators();
+
+	public void Setup()
+	{
+		if (Player)
+		{
+			playerRenderer = Player.GetComponent<Renderer>();
+			playerDamager = Player.GetComponent<Damager>();
+
+
+			InitIndicators();
+			SetBlobState(BlobStates.First());
+		}
 	}
 
 
@@ -115,8 +124,11 @@ public class BlobStateManager : MonoBehaviour
 		playerDamager.Tags = new string[] { "Player", state.stateName };
 
 
-		//jelly params
-		Player.m_Stiffness = state.jellyStiffness;
-		Player.m_Mass = state.jellyMass;
+		//if (Player)
+		{
+			//jelly params
+			Player.m_Stiffness = state.jellyStiffness;
+			Player.m_Mass = state.jellyMass;
+		}
 	}
 }

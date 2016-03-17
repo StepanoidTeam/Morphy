@@ -1,33 +1,54 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GameManager : MonoBehaviour {
+public class GameManager : MonoBehaviour
+{
+	public GameObject PlayerPrefab;
+
+	public Transform SpawnPosition;
+
+	public CameraFollow cameraFollow;
+	public BlobStateManager blobStateManager;
 
 
-	public Camera m_Camera;
-
-	public Transform m_PlayerPosition;
-
-	public Vector3 spawnPosition;
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+	GameObject currentPlayer;
 
 
-	void Respawn() {
+	void Start()
+	{
+
 		
+    }
 
-		var jelly = m_PlayerPosition.GetComponent<JellySprite>();
-		if (jelly)
+	// Update is called once per frame
+	void Update()
+	{
+
+	}
+
+	void FixedUpdate()
+	{
+		if (currentPlayer == null)
 		{
-			jelly.SetPosition(spawnPosition, true);
+			Respawn();
 		}
 	}
+
+
+	void Respawn()
+	{
+		currentPlayer = Instantiate(PlayerPrefab);
+		var jelly = currentPlayer.GetComponent<UnityJellySprite>();
+		//jelly.SetPosition(SpawnPosition.position, true);
+
+
+		cameraFollow.Target = jelly.transform;
+		cameraFollow.SetupCamera();
+
+		blobStateManager.Player = jelly;
+		blobStateManager.Setup();
+	}
+
+
+
 }

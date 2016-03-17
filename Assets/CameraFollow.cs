@@ -13,10 +13,13 @@ public class CameraFollow : MonoBehaviour
 		SetupCamera();
 	}
 
+	bool setupOk = false;
+
 	public void SetupCamera()
 	{
-		if (Target)
+		if (Target && !setupOk)
 		{
+			setupOk = true;
 			// Calculate the initial offset.
 			offset = Camera.transform.position - Target.position;
 		}
@@ -29,7 +32,7 @@ public class CameraFollow : MonoBehaviour
 			Vector3 targetCamPos = Target.position + offset;
 
 			// Smoothly interpolate between the camera's current position and it's target position.
-			Camera.transform.position = Vector3.Lerp(transform.position, targetCamPos, smoothing * Time.deltaTime);
+			Camera.transform.position = Vector3.Lerp(Camera.transform.position, targetCamPos, smoothing * Time.deltaTime);
 		}
 	}
 }
