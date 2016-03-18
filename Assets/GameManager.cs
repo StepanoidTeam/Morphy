@@ -38,12 +38,14 @@ public class GameManager : MonoBehaviour
 	void Respawn()
 	{
 		currentPlayer = Instantiate(PlayerPrefab);
+		currentPlayer.transform.position = SpawnPosition.position;
+
 		var jelly = currentPlayer.GetComponent<UnityJellySprite>();
 		//jelly.SetPosition(SpawnPosition.position, true);
 
 
 		cameraFollow.Target = jelly.transform;
-		cameraFollow.SetupCamera();
+		//cameraFollow.SetupCamera();
 
 		blobStateManager.Player = jelly;
 		blobStateManager.Setup();

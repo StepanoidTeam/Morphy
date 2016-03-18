@@ -255,7 +255,7 @@ MonoBehaviour:
   m_FreeModeBodyKinematic: 0000000000000000000000
   m_MassStyle: 0
   m_PhysicsMaterial: {fileID: 0}
-  m_PhysicsMaterial2D: {fileID: 6200000, guid: e7b65b018d0adf54bb899f1689e63970, type: 2}
+  m_PhysicsMaterial2D: {fileID: 6200000, guid: b12bce0b58a16e647962c3a7ee6b020a, type: 2}
   m_VertexDensity: 10
   m_SphereRadius: 0.25
   m_DistanceExponent: 2
@@ -394,6 +394,10 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_PhysicsMaterial2D
+      value: 
+      objectReference: {fileID: 6200000, guid: b12bce0b58a16e647962c3a7ee6b020a, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 153758}
