@@ -41,6 +41,11 @@ public class BlobMover : MonoBehaviour
 	// Update is called once per frame
 	void FixedUpdate()
 	{
+		if (Input.GetButton("Cancel"))
+		{
+			Destroy(this.gameObject);
+		}
+
 		var isGrounded = CheckIsGrounded();
 
 		var axes = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
@@ -57,7 +62,7 @@ public class BlobMover : MonoBehaviour
 			m_JellySprite.AddForce(JumpForce * Vector2.up);
 		}
 
-
+		
 
 		m_JellySprite.AddForce(Vector2.right * axes.x * Speed * (isGrounded ? 1 : 1 / onAirSpeedPenalty));
 
