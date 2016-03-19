@@ -139,7 +139,8 @@ public class BlobStateManager : MonoBehaviour
 		Player.m_Drag = state.m_Drag;
 		Player.m_GravityScale = state.m_GravityScale;
 		Player.m_LockRotation = state.m_LockRotation;
-
+		
 		Player.UpdateJoints();
+		Player.WakeUp();
 	}
 }

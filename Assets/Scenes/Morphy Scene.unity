@@ -266,7 +266,7 @@ GameObject:
   - 4: {fileID: 281487508}
   - 114: {fileID: 281487507}
   m_Layer: 0
-  m_Name: MorphySpawnPoint
+  m_Name: Default Spawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -291,11 +291,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 281487506}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -81, y: 120.5, z: 0}
+  m_LocalPosition: {x: 93.96, y: 28.06, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_Father: {fileID: 1531026290}
+  m_RootOrder: 0
 --- !u!1 &334216346
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,7 +553,7 @@ Transform:
   - {fileID: 817596987}
   - {fileID: 38394521}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!114 &528049011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -654,7 +654,7 @@ MonoBehaviour:
     m_AngularDrag: 0
     m_DampingRatio: 0
     m_Drag: 0
-    m_GravityScale: 0
+    m_GravityScale: 10
     m_LockRotation: 0
 --- !u!21 &596953183
 Material:
@@ -1224,7 +1224,7 @@ Transform:
   - {fileID: 1286309553}
   - {fileID: 1031223568}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!4 &1031223568 stripped
 Transform:
   m_PrefabParentObject: {fileID: 492450, guid: 0d111084dbd88074d853d70f33bb9512, type: 2}
@@ -1676,6 +1676,75 @@ RectTransform:
   m_PrefabParentObject: {fileID: 22494902, guid: 040b91acfa14c744b9016afd749fb67e,
     type: 2}
   m_PrefabInternal: {fileID: 1458636729}
+--- !u!1 &1531026289
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1531026290}
+  m_Layer: 0
+  m_Name: SpawnPoints
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1531026290
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1531026289}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 281487508}
+  - {fileID: 1594088574}
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+--- !u!1 &1594088573
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1594088574}
+  - 114: {fileID: 1594088575}
+  m_Layer: 0
+  m_Name: LiquidTest Spawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1594088574
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1594088573}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -79.93, y: 121.16, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1531026290}
+  m_RootOrder: 1
+--- !u!114 &1594088575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1594088573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7dd81cbb53f2564dbf5759031f6a0c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iconName: morphy
 --- !u!1001 &1638442541
 Prefab:
   m_ObjectHideFlags: 0
