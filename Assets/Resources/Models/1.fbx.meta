@@ -1,0 +1,151 @@
+fileFormatVersion: 2
+guid: fdc3980d4e014d24386d2a77f5e0fe1f
+timeCreated: 1459859832
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: korabl:gravityField1
+    100004: korabl:nucleus1
+    100006: korabl:pCube1
+    100008: korabl:pCylinder1
+    100010: korabl:pCylinder10
+    100012: korabl:pCylinder11
+    100014: korabl:pCylinder12
+    100016: korabl:pCylinder13
+    100018: korabl:pCylinder14
+    100020: korabl:pCylinder2
+    100022: korabl:pCylinder3
+    100024: korabl:pCylinder4
+    100026: korabl:pCylinder5
+    100028: korabl:pCylinder6
+    100030: korabl:pCylinder7
+    100032: korabl:pCylinder8
+    100034: korabl:pCylinder9
+    100036: korabl:pSphere1
+    100038: korabl:pSphere2
+    100040: korabl:pTorus1
+    100042: korabl:transform1
+    100044: korabl:transform10
+    100046: korabl:transform11
+    100048: korabl:transform12
+    100050: korabl:transform13
+    100052: korabl:transform14
+    100054: korabl:transform15
+    100056: korabl:transform16
+    100058: korabl:transform17
+    100060: korabl:transform2
+    100062: korabl:transform3
+    100064: korabl:transform4
+    100066: korabl:transform5
+    100068: korabl:transform6
+    100070: korabl:transform7
+    100072: korabl:transform8
+    100074: korabl:transform9
+    400000: //RootNode
+    400002: korabl:gravityField1
+    400004: korabl:nucleus1
+    400006: korabl:pCube1
+    400008: korabl:pCylinder1
+    400010: korabl:pCylinder10
+    400012: korabl:pCylinder11
+    400014: korabl:pCylinder12
+    400016: korabl:pCylinder13
+    400018: korabl:pCylinder14
+    400020: korabl:pCylinder2
+    400022: korabl:pCylinder3
+    400024: korabl:pCylinder4
+    400026: korabl:pCylinder5
+    400028: korabl:pCylinder6
+    400030: korabl:pCylinder7
+    400032: korabl:pCylinder8
+    400034: korabl:pCylinder9
+    400036: korabl:pSphere1
+    400038: korabl:pSphere2
+    400040: korabl:pTorus1
+    400042: korabl:transform1
+    400044: korabl:transform10
+    400046: korabl:transform11
+    400048: korabl:transform12
+    400050: korabl:transform13
+    400052: korabl:transform14
+    400054: korabl:transform15
+    400056: korabl:transform16
+    400058: korabl:transform17
+    400060: korabl:transform2
+    400062: korabl:transform3
+    400064: korabl:transform4
+    400066: korabl:transform5
+    400068: korabl:transform6
+    400070: korabl:transform7
+    400072: korabl:transform8
+    400074: korabl:transform9
+    2300000: korabl:pCylinder14
+    3300000: korabl:pCylinder14
+    4300000: korabl:pCylinder14
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

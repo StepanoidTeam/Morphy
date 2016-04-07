@@ -1,0 +1,165 @@
+fileFormatVersion: 2
+guid: 9c94c6547a59883428f5dc4524053b24
+timeCreated: 1459859832
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: moto:grpIControlSpline1Cons
+    100004: moto:grpIControlSpline1ZERO
+    100006: moto:grpIControlSpline3Cons
+    100008: moto:grpIControlSpline3ZERO
+    100010: moto:grpSplineCONTROLS
+    100012: moto:grpSplineDRIVEN
+    100014: moto:grpSplineRIG
+    100016: moto:pCube1
+    100018: moto:pCylinder1
+    100020: moto:pCylinder12
+    100022: moto:pCylinder2
+    100024: moto:pCylinder5
+    100026: moto:pCylinder6
+    100028: moto:pCylinder8
+    100030: moto:pPipe1
+    100032: moto:pPipe10
+    100034: moto:pPipe11
+    100036: moto:pPipe2
+    100038: moto:pPipe23
+    100040: moto:pPipe3
+    100042: moto:pPipe4
+    100044: moto:pPipe5
+    100046: moto:pPipe6
+    100048: moto:pPipe7
+    100050: moto:pPipe8
+    100052: moto:pPipe9
+    100054: moto:transform1
+    100056: moto:transform10
+    100058: moto:transform11
+    100060: moto:transform12
+    100062: moto:transform13
+    100064: moto:transform14
+    100066: moto:transform15
+    100068: moto:transform16
+    100070: moto:transform17
+    100072: moto:transform18
+    100074: moto:transform2
+    100076: moto:transform3
+    100078: moto:transform4
+    100080: moto:transform5
+    100082: moto:transform6
+    100084: moto:transform7
+    100086: moto:transform8
+    100088: moto:transform9
+    400000: //RootNode
+    400002: moto:grpIControlSpline1Cons
+    400004: moto:grpIControlSpline1ZERO
+    400006: moto:grpIControlSpline3Cons
+    400008: moto:grpIControlSpline3ZERO
+    400010: moto:grpSplineCONTROLS
+    400012: moto:grpSplineDRIVEN
+    400014: moto:grpSplineRIG
+    400016: moto:pCube1
+    400018: moto:pCylinder1
+    400020: moto:pCylinder12
+    400022: moto:pCylinder2
+    400024: moto:pCylinder5
+    400026: moto:pCylinder6
+    400028: moto:pCylinder8
+    400030: moto:pPipe1
+    400032: moto:pPipe10
+    400034: moto:pPipe11
+    400036: moto:pPipe2
+    400038: moto:pPipe23
+    400040: moto:pPipe3
+    400042: moto:pPipe4
+    400044: moto:pPipe5
+    400046: moto:pPipe6
+    400048: moto:pPipe7
+    400050: moto:pPipe8
+    400052: moto:pPipe9
+    400054: moto:transform1
+    400056: moto:transform10
+    400058: moto:transform11
+    400060: moto:transform12
+    400062: moto:transform13
+    400064: moto:transform14
+    400066: moto:transform15
+    400068: moto:transform16
+    400070: moto:transform17
+    400072: moto:transform18
+    400074: moto:transform2
+    400076: moto:transform3
+    400078: moto:transform4
+    400080: moto:transform5
+    400082: moto:transform6
+    400084: moto:transform7
+    400086: moto:transform8
+    400088: moto:transform9
+    2300000: moto:pCylinder12
+    3300000: moto:pCylinder12
+    4300000: moto:pCylinder12
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

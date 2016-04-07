@@ -1,0 +1,144 @@
+fileFormatVersion: 2
+guid: 6abbbaa05e3ec8d40b424934d38f6dbc
+timeCreated: 1459859831
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: planeta_rollik1:planeta_hlam1:Planet:Cylinder01
+    100004: planeta_rollik1:planeta_hlam1:Planet:Cylinder04
+    100006: planeta_rollik1:planeta_hlam1:Planet:Cylinder05
+    100008: planeta_rollik1:planeta_hlam1:Planet:Object02
+    100010: planeta_rollik1:planeta_hlam1:Planet:Object046
+    100012: planeta_rollik1:planeta_hlam1:Planet:Object047
+    100014: planeta_rollik1:planeta_hlam1:Planet:Object048
+    100016: planeta_rollik1:planeta_hlam1:Planet:Object049
+    100018: planeta_rollik1:planeta_hlam1:Planet:Object05
+    100020: planeta_rollik1:planeta_hlam1:Planet:Object07
+    100022: planeta_rollik1:planeta_hlam1:Planet:Object08
+    100024: planeta_rollik1:planeta_hlam1:Planet:Sphere01
+    100026: planeta_rollik1:planeta_hlam1:Planet:Sphere03
+    100028: planeta_rollik1:planeta_hlam1:Planet:Tube01
+    400000: //RootNode
+    400002: planeta_rollik1:planeta_hlam1:Planet:Cylinder01
+    400004: planeta_rollik1:planeta_hlam1:Planet:Cylinder04
+    400006: planeta_rollik1:planeta_hlam1:Planet:Cylinder05
+    400008: planeta_rollik1:planeta_hlam1:Planet:Object02
+    400010: planeta_rollik1:planeta_hlam1:Planet:Object046
+    400012: planeta_rollik1:planeta_hlam1:Planet:Object047
+    400014: planeta_rollik1:planeta_hlam1:Planet:Object048
+    400016: planeta_rollik1:planeta_hlam1:Planet:Object049
+    400018: planeta_rollik1:planeta_hlam1:Planet:Object05
+    400020: planeta_rollik1:planeta_hlam1:Planet:Object07
+    400022: planeta_rollik1:planeta_hlam1:Planet:Object08
+    400024: planeta_rollik1:planeta_hlam1:Planet:Sphere01
+    400026: planeta_rollik1:planeta_hlam1:Planet:Sphere03
+    400028: planeta_rollik1:planeta_hlam1:Planet:Tube01
+    2300000: planeta_rollik1:planeta_hlam1:Planet:Cylinder01
+    2300002: planeta_rollik1:planeta_hlam1:Planet:Cylinder04
+    2300004: planeta_rollik1:planeta_hlam1:Planet:Cylinder05
+    2300006: planeta_rollik1:planeta_hlam1:Planet:Object02
+    2300008: planeta_rollik1:planeta_hlam1:Planet:Object046
+    2300010: planeta_rollik1:planeta_hlam1:Planet:Object047
+    2300012: planeta_rollik1:planeta_hlam1:Planet:Object048
+    2300014: planeta_rollik1:planeta_hlam1:Planet:Object049
+    2300016: planeta_rollik1:planeta_hlam1:Planet:Object05
+    2300018: planeta_rollik1:planeta_hlam1:Planet:Object07
+    2300020: planeta_rollik1:planeta_hlam1:Planet:Object08
+    2300022: planeta_rollik1:planeta_hlam1:Planet:Sphere01
+    2300024: planeta_rollik1:planeta_hlam1:Planet:Sphere03
+    2300026: planeta_rollik1:planeta_hlam1:Planet:Tube01
+    3300000: planeta_rollik1:planeta_hlam1:Planet:Cylinder01
+    3300002: planeta_rollik1:planeta_hlam1:Planet:Cylinder04
+    3300004: planeta_rollik1:planeta_hlam1:Planet:Cylinder05
+    3300006: planeta_rollik1:planeta_hlam1:Planet:Object02
+    3300008: planeta_rollik1:planeta_hlam1:Planet:Object046
+    3300010: planeta_rollik1:planeta_hlam1:Planet:Object047
+    3300012: planeta_rollik1:planeta_hlam1:Planet:Object048
+    3300014: planeta_rollik1:planeta_hlam1:Planet:Object049
+    3300016: planeta_rollik1:planeta_hlam1:Planet:Object05
+    3300018: planeta_rollik1:planeta_hlam1:Planet:Object07
+    3300020: planeta_rollik1:planeta_hlam1:Planet:Object08
+    3300022: planeta_rollik1:planeta_hlam1:Planet:Sphere01
+    3300024: planeta_rollik1:planeta_hlam1:Planet:Sphere03
+    3300026: planeta_rollik1:planeta_hlam1:Planet:Tube01
+    4300000: planeta_rollik1:planeta_hlam1:Planet:Object08
+    4300002: planeta_rollik1:planeta_hlam1:Planet:Tube01
+    4300004: planeta_rollik1:planeta_hlam1:Planet:Object046
+    4300006: planeta_rollik1:planeta_hlam1:Planet:Sphere01
+    4300008: planeta_rollik1:planeta_hlam1:Planet:Object05
+    4300010: planeta_rollik1:planeta_hlam1:Planet:Object07
+    4300012: planeta_rollik1:planeta_hlam1:Planet:Object047
+    4300014: planeta_rollik1:planeta_hlam1:Planet:Object048
+    4300016: planeta_rollik1:planeta_hlam1:Planet:Object049
+    4300018: planeta_rollik1:planeta_hlam1:Planet:Sphere03
+    4300020: planeta_rollik1:planeta_hlam1:Planet:Object02
+    4300022: planeta_rollik1:planeta_hlam1:Planet:Cylinder05
+    4300024: planeta_rollik1:planeta_hlam1:Planet:Cylinder04
+    4300026: planeta_rollik1:planeta_hlam1:Planet:Cylinder01
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
