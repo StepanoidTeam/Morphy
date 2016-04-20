@@ -41,11 +41,6 @@ public class BlobMover : MonoBehaviour
 	// Update is called once per frame
 	void FixedUpdate()
 	{
-		if (Input.GetButton("Cancel"))
-		{
-			Destroy(this.gameObject);
-		}
-
 		var isGrounded = CheckIsGrounded();
 
 		var axes = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));

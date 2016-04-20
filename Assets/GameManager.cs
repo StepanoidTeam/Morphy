@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -16,9 +17,8 @@ public class GameManager : MonoBehaviour
 
 	void Start()
 	{
-
 		
-    }
+	}
 
 	// Update is called once per frame
 	void Update()
@@ -28,6 +28,17 @@ public class GameManager : MonoBehaviour
 
 	void FixedUpdate()
 	{
+		if (Input.GetButton("Fire1"))
+		{
+			Destroy(currentPlayer);
+		}
+
+		if (Input.GetButton("Cancel"))
+		{
+			SceneManager.LoadScene("MainMenu");
+		}
+
+
 		if (currentPlayer == null)
 		{
 			Respawn();
