@@ -82,36 +82,15 @@ public class BlobStateManager : MonoBehaviour
 
 			var go = Instantiate(BlobStateIndicatorPrefab);
 			var bsi = go.GetComponent<BlobStateIndicator>();
+			bsi.blobStateManager = this;
 
-			bsi.Init(state.texture, state.key.ToString());
+			bsi.Init(state.texture, state.stateName, state.key);
 
 			go.transform.SetParent(BlobStateContainer.transform);
 		}
 	}
 
-
-	void FixedUpdate()
-	{
-
-		CheckKeys();
-
-	}
-
-
-	void CheckKeys()
-	{
-		foreach (var state in BlobStates)
-		{
-			if (Input.GetKeyDown(state.key))
-			{
-				SetBlobState(state);
-			}
-		}
-	}
-
-
-
-	void SetBlobState(string stateName)
+	public void SetBlobState(string stateName)
 	{
 		var blobState = Array.Find(BlobStates, x => x.stateName == stateName);
 		SetBlobState(blobState);
@@ -139,7 +118,7 @@ public class BlobStateManager : MonoBehaviour
 		Player.m_Drag = state.m_Drag;
 		Player.m_GravityScale = state.m_GravityScale;
 		Player.m_LockRotation = state.m_LockRotation;
-		
+
 		Player.UpdateJoints();
 		Player.WakeUp();
 	}

@@ -13,41 +13,48 @@ public class GameManager : MonoBehaviour
 
 
 	GameObject currentPlayer;
+	BlobMover currentPlayerMover;
 
 
-	void Start()
+	public void BackToMenu()
 	{
-		
+		SceneManager.LoadScene("MainMenu");
 	}
 
-	// Update is called once per frame
-	void Update()
-	{
-
-	}
 
 	void FixedUpdate()
 	{
-		if (Input.GetButton("Fire1"))
-		{
-			Destroy(currentPlayer);
-		}
-
-		if (Input.GetButton("Cancel"))
-		{
-			SceneManager.LoadScene("MainMenu");
-		}
-
-
 		if (currentPlayer == null)
 		{
 			Respawn();
 		}
+
+		//todo: move to buttons
+		//if (Input.GetKey(KeyCode.Tab))
+		//{
+		//	Respawn();
+		//}
+
+		
+	}
+
+	public void PlayerJump()
+	{
+		currentPlayerMover.Jump();
 	}
 
 
-	void Respawn()
+	public void PlayerMove(float direction)
 	{
+		currentPlayerMover.Move(direction);
+	}
+
+
+
+	public void Respawn()
+	{
+		Destroy(currentPlayer);
+
 		currentPlayer = Instantiate(PlayerPrefab);
 		currentPlayer.transform.position = SpawnPosition.position;
 
@@ -60,8 +67,7 @@ public class GameManager : MonoBehaviour
 
 		blobStateManager.Player = jelly;
 		blobStateManager.Setup();
+
+		currentPlayerMover = currentPlayer.GetComponent<BlobMover>();
 	}
-
-
-
 }

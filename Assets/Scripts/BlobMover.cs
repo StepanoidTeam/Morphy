@@ -1,6 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
-using System;
 
 public class BlobMover : MonoBehaviour
 {
@@ -17,8 +15,6 @@ public class BlobMover : MonoBehaviour
 
 	Animator m_Animator;
 
-	Rigidbody2D m_JellyRigidbody2D;
-
 
 	/// <summary>
 	/// Start this instance.
@@ -28,7 +24,6 @@ public class BlobMover : MonoBehaviour
 		m_JellySprite = GetComponent<JellySprite>();
 
 		m_Animator = GetComponentInChildren<Animator>();
-		
 	}
 
 
@@ -38,34 +33,40 @@ public class BlobMover : MonoBehaviour
 	}
 
 
-	// Update is called once per frame
-	void FixedUpdate()
+	public void Jump()
 	{
-		var isGrounded = CheckIsGrounded();
-
-		var axes = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-
-		//Debug.Log(axes);
-
-		m_Animator.SetFloat("HDirection", axes.x);
-		//m_Animator.SetFloat("VDirection", m_JellyRigidbody2D.velocity.normalized.y);
-
-
-
-		if (Input.GetButton("Jump") && isGrounded)
+		if (CheckIsGrounded())
 		{
 			m_JellySprite.AddForce(JumpForce * Vector2.up);
-		}
-
-		
-
-		m_JellySprite.AddForce(Vector2.right * axes.x * Speed * (isGrounded ? 1 : 1 / onAirSpeedPenalty));
-
-		if (!isGrounded && axes.z < 0)
-		{
-			m_JellySprite.AddForce(Vector2.up * axes.z * Speed);
+			direction.y = 1;
 		}
 	}
 
+	public void MoveLeft()
+	{
+		Move(-1);
+	}
 
+	public void MoveRight()
+	{
+		Move(1);
+	}
+
+
+	Vector2 direction = Vector2.zero;
+
+	void FixedUpdate()
+	{
+		direction = Vector2.Lerp(direction, Vector2.zero, Time.deltaTime);
+		m_Animator.SetFloat("HDirection", direction.x);
+		m_Animator.SetFloat("VDirection", direction.y);
+	}
+
+	public void Move(float hDirection)
+	{
+
+		direction.x = hDirection;
+
+		m_JellySprite.AddForce(Vector2.right * direction.x * Speed * (CheckIsGrounded() ? 1 : 1 / onAirSpeedPenalty));
+	}
 }
