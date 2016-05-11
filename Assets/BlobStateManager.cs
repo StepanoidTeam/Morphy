@@ -2,6 +2,7 @@
 using System.Collections;
 using System;
 using System.Linq;
+using System.Collections.Generic;
 
 public class BlobStateManager : MonoBehaviour
 {
@@ -66,6 +67,7 @@ public class BlobStateManager : MonoBehaviour
 		}
 	}
 
+	List<BlobStateIndicator> blobStateIndicators;
 
 	void InitIndicators()
 	{
@@ -76,6 +78,7 @@ public class BlobStateManager : MonoBehaviour
 			Destroy(t.gameObject);
 		}
 
+		blobStateIndicators = new List<BlobStateIndicator>();
 
 		foreach (var state in BlobStates)
 		{
@@ -88,6 +91,8 @@ public class BlobStateManager : MonoBehaviour
 
 			go.transform.SetParent(BlobStateContainer.transform);
 			go.transform.localScale = Vector3.one;
+
+			blobStateIndicators.Add(bsi);
 		}
 	}
 
@@ -99,6 +104,13 @@ public class BlobStateManager : MonoBehaviour
 
 	void SetBlobState(BlobStateBehavior state)
 	{
+		foreach (var indicator in blobStateIndicators)
+		{
+			indicator.IsSelected = false;
+		}
+
+		blobStateIndicators.Find(x => x.Name == state.stateName).IsSelected = true;
+
 		сurrentState = state;
 
 		playerRenderer.material.mainTexture = state.texture;

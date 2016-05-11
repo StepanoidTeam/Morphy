@@ -12,6 +12,7 @@ public class BlobStateIndicator : MonoBehaviour
 	public string Name;
 	public KeyCode Hotkey;
 
+
 	Image m_Image;
 	Text m_Text;
 
@@ -21,12 +22,6 @@ public class BlobStateIndicator : MonoBehaviour
 		StateImage = Sprite.Create(tex, new Rect(0, 0, tex.width, tex.height), Vector2.one);
 		Hotkey = hotkey;
 		Name = name;
-	}
-
-
-	// Use this for initialization
-	void Start()
-	{
 
 		m_Image = GetComponent<Image>();
 		m_Text = GetComponentInChildren<Text>();
@@ -35,8 +30,8 @@ public class BlobStateIndicator : MonoBehaviour
 		m_Image.sprite = StateImage;
 		m_Text.text = Hotkey.ToString();
 
-		
 	}
+		
 
 	void FixedUpdate()
 	{
@@ -46,6 +41,23 @@ public class BlobStateIndicator : MonoBehaviour
 		}
 	}
 
+
+	bool _isSelected = false;
+	public bool IsSelected
+	{
+		get
+		{
+			return _isSelected;
+		}
+		set
+		{
+			_isSelected = value;
+			if (m_Image != null)
+			{
+				m_Image.color = new Color(1f, 1f, 1f, value ? 1 : 0.3f);
+			}
+		}
+	}
 
 	public void SetCurrentState()
 	{
