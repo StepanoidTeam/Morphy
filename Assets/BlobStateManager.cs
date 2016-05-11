@@ -87,6 +87,7 @@ public class BlobStateManager : MonoBehaviour
 			bsi.Init(state.texture, state.stateName, state.key);
 
 			go.transform.SetParent(BlobStateContainer.transform);
+			go.transform.localScale = Vector3.one;
 		}
 	}
 
